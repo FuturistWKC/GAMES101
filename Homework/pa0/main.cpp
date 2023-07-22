@@ -2,6 +2,7 @@
 #include<eigen3/Eigen/Core>
 #include<eigen3/Eigen/Dense>
 #include<iostream>
+#include "pa0.h"
 
 int main(){
 
@@ -39,10 +40,15 @@ int main(){
     // matrix output
     std::cout << "Example of output \n";
     std::cout << i << std::endl;
+    std::cout <<"----------" << std::endl;
+    std::cout << j << std::endl;
     // matrix add i + j
     // matrix scalar multiply i * 2.0
     // matrix multiply i * j
     // matrix multiply vector i * v
+    std::cerr << "Error message: You are a stupid man!\n";
+    std::clog << "Log message: You are a stupid man!\n";
 
+    Homework01();
     return 0;
 }
