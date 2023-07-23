@@ -46,9 +46,9 @@ int main(){
     // matrix scalar multiply i * 2.0
     // matrix multiply i * j
     // matrix multiply vector i * v
-    std::cerr << "Error message: You are a stupid man!\n";
-    std::clog << "Log message: You are a stupid man!\n";
-
+    std::cout <<"----------" << std::endl;
+    std::cout <<"Homework0" << std::endl;
+    
     Homework01();
     return 0;
 }
