@@ -38,3 +38,10 @@ int main()
 3   -1
 2.5 1.5
 ```
+## 查看版本号
+`vim /usr/local/include/eigen3/Eigen/src/Core/util/Macros.h`
+```
+#define EIGEN_WORLD_VERSION 3
+#define EIGEN_MAJOR_VERSION 4
+#define EIGEN_MINOR_VERSION 90
+```
