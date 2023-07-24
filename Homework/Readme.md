@@ -57,5 +57,5 @@ int main()
 `sudo rm -rf eigen3路径`  
 删除相关文件  
 # Linux下安装OpenCV
-[OpenCV Get Start](https://opencv.org/get-started/)
+[OpenCV Get Started](https://opencv.org/get-started/)  
 [OpenCV安装参考](https://docs.opencv.org/4.8.0/d7/d9f/tutorial_linux_install.html)
