@@ -66,6 +66,7 @@ Linux
 Yes  
 **Language:**  
 C++  
-[OpenCV安装参考](https://docs.opencv.org/4.8.0/d7/d9f/tutorial_linux_install.html)
+[OpenCV安装参考](https://docs.opencv.org/4.8.0/d7/d9f/tutorial_linux_install.html)  
+最后不要忘记`sudo make install`
 ## 查看版本号
 `opencv_version`
