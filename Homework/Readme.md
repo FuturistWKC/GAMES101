@@ -46,7 +46,7 @@ int main()
 #define EIGEN_MINOR_VERSION 90
 ```
 版本为3.4.90  
-
+  
 `pkg-config --modversion eigen3`  
 可查看版本号，需安装pkg-config
 ## 卸载
