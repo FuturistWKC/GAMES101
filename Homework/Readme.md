@@ -59,6 +59,9 @@ int main()
 删除相关文件  
 # Linux下安装OpenCV
 ## 安装
+`sudo apt-get install build-essential libgtk2.0-dev libgtk-3-dev libavcodec-dev libavformat-dev libjpeg-dev libswscale-dev libtiff5-dev
+`  
+先安装依赖库
 [OpenCV Get Started](https://opencv.org/get-started/)  
 **Operating System:**  
 Linux  
@@ -70,6 +73,4 @@ C++
 最后不要忘记`sudo make install`
 ## 查看版本号
 `opencv_version`
-> terminate called after throwing an instance of 'cv::Exception'
-  what():  OpenCV(4.8.0) /home/darwinvinci/Downloads/opencv-4.8.0/modules/highgui/src/window.cpp:1255: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
 
