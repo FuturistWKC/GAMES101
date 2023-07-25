@@ -62,7 +62,7 @@ int main()
 ```
 sudo apt-get install build-essential libgtk2.0-dev libgtk-3-dev libavcodec-dev libavformat-dev libjpeg-dev libswscale-dev libtiff5-dev
 ```  
-先安装依赖库
+先安装依赖库  
 [OpenCV Get Started](https://opencv.org/get-started/)  
 **Operating System:**  
 Linux  
