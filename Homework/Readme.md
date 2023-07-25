@@ -59,7 +59,8 @@ int main()
 删除相关文件  
 # Linux下安装OpenCV
 ## 安装
-```sudo apt-get install build-essential libgtk2.0-dev libgtk-3-dev libavcodec-dev libavformat-dev libjpeg-dev libswscale-dev libtiff5-dev
+```
+sudo apt-get install build-essential libgtk2.0-dev libgtk-3-dev libavcodec-dev libavformat-dev libjpeg-dev libswscale-dev libtiff5-dev
 ```  
 先安装依赖库
 [OpenCV Get Started](https://opencv.org/get-started/)  
