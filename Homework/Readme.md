@@ -75,7 +75,7 @@ C++
 cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.x/modules ../opencv-4.x -D OPENCV_GENERATE_PKGCONFIG=YES -D CMAKE_BUILD_TYPE=Release
 ```
 `-D CMAKE_BUILD_TYPE=Release`  
-此条为可选项，如果不添加，cmake默认使用Release
+此条为可选项，如果不添加，cmake默认使用Release  
 最后不要忘记`sudo make install`
 ## 查看版本号
 `opencv_version`
