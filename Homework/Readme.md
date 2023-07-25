@@ -97,11 +97,9 @@ int main(int argc, char** argv )
 ```
 main.cpp  
 ```
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.0)
 project(ImageShow)
 find_package(OpenCV REQUIRED)
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 add_executable(ImageShow main.cpp)
 target_link_libraries(ImageShow PRIVATE ${OpenCV_LIBS})
 
