@@ -112,14 +112,3 @@ make
 ./ImageShow image.jpg
 ```
 将image.jpg放到build目录下
-
-# 大标题
-## 二级标题
-**加粗**  
-[超链接](www.baidu.com)
-```
-pubilc class ABC(){
-
-}
-```
-
