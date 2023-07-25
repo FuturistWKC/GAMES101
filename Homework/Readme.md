@@ -102,7 +102,6 @@ project(ImageShow)
 find_package(OpenCV REQUIRED)
 add_executable(ImageShow main.cpp)
 target_link_libraries(ImageShow PRIVATE ${OpenCV_LIBS})
-
 ```
 CMakeLists.txt  
 ```
