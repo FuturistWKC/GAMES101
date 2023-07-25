@@ -79,4 +79,43 @@ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.x/modules ../opencv-4.x -D
 最后不要忘记`sudo make install`
 ## 查看版本号
 `opencv_version`
+## 测试
+```
+#include <iostream>
+#include <opencv2/core.hpp>
+#include <opencv2/highgui.hpp>
+using namespace cv;
+using namespace std;
+int main(int argc, char** argv )
+{
+        Mat image;
+        image = imread( argv[1], 1 );
+        imshow("Display Image", image);
+        waitKey(0);
+        return 0;
+}
+```
+main.cpp  
+```
+cmake_minimum_required(VERSION 3.1)
+project(ImageShow)
+find_package(OpenCV REQUIRED)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+add_executable(ImageShow main.cpp)
+target_link_libraries(ImageShow PRIVATE ${OpenCV_LIBS})
+
+```
+CMakeLists.txt  
+```
+mkdir build
+cd build
+cmake ..
+make
+./ImageShow image.jpg
+```
+将image.jpg放到build目录下
+
+
+
 
