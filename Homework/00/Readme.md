@@ -1,3 +1,4 @@
+# Code
 ```
     Eigen::Vector3f P(2.0f,1.0f,1.0f);
 
@@ -16,4 +17,5 @@
 
     std::cout<< P << std::endl;
 ```
+# Result
 ![Homework0](01.png "Homework0")
