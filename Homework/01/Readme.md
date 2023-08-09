@@ -20,10 +20,10 @@
     float r = t * aspect_ratio;
     float l = -r;
 
-    projection << 2*n/(r-l), 0,        (l+r)/(l-r),               0,
-                  0,        2*n/(t-b), (b+t)/(b-t),               0,
-                  0,        0,         (zNear+zFar)/(zNear-zFar), 2*zNear*zFar/(zFar-zNear),
-                  0,        0,          1,                        0;
+    projection << 2*n/(r-l), 0,         (l+r)/(l-r),               0,
+                  0,         2*n/(t-b), (b+t)/(b-t),               0,
+                  0,         0,         (zNear+zFar)/(zNear-zFar), 2*zNear*zFar/(zFar-zNear),
+                  0,         0,          1,                        0;
 ```
 # Result
 ![Result](03.png)
