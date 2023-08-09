@@ -15,7 +15,7 @@
 **projection**
 ```
     float n = abs(zFar-zNear);
-    float t = n * tan(eye_fov/2);
+    float t = -n * tan(eye_fov/2/180*acos(-1));
     float b = -t;
     float r = t * aspect_ratio;
     float l = -r;
