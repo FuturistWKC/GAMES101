@@ -1,3 +1,0 @@
-/home/darwinvinci/WorkSpace/CProject/Assignment1/CodeFramework/build/CMakeFiles/Rasterizer.dir
-/home/darwinvinci/WorkSpace/CProject/Assignment1/CodeFramework/build/CMakeFiles/edit_cache.dir
-/home/darwinvinci/WorkSpace/CProject/Assignment1/CodeFramework/build/CMakeFiles/rebuild_cache.dir

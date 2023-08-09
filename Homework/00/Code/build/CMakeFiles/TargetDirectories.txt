@@ -1,3 +1,0 @@
-/home/darwinvinci/WorkSpace/CProject/GAMES101/Homework/pa0/build/CMakeFiles/rebuild_cache.dir
-/home/darwinvinci/WorkSpace/CProject/GAMES101/Homework/pa0/build/CMakeFiles/edit_cache.dir
-/home/darwinvinci/WorkSpace/CProject/GAMES101/Homework/pa0/build/CMakeFiles/Transformation.dir
