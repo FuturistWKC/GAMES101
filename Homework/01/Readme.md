@@ -14,16 +14,13 @@
 ```
 **projection**
 ```
-    float n = abs(zFar-zNear);
-    float t = -n * tan(eye_fov/2/180*acos(-1));
-    float b = -t;
-    float r = t * aspect_ratio;
-    float l = -r;
+    float t = tan(eye_fov/2/180*acos(-1));
 
-    projection << 2*n/(r-l), 0,        (l+r)/(l-r),               0,
-                  0,        2*n/(t-b), (b+t)/(b-t),               0,
-                  0,        0,         (zNear+zFar)/(zNear-zFar), 2*zNear*zFar/(zFar-zNear),
-                  0,        0,          1,                        0;
+    projection << -1/t*aspect_ratio, 0,    0,                         0,
+                          0,         -1/t, 0,                         0,
+                          0,         0,    (zNear+zFar)/(zNear-zFar), 2*zNear*zFar/(zFar-zNear),
+                          0,         0,    1,                         0;
+
 ```
 # Result
 ![Result](03.png)
