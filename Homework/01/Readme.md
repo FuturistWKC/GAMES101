@@ -20,7 +20,6 @@
                           0,         -1/t, 0,                         0,
                           0,         0,    (zNear+zFar)/(zNear-zFar), 2*zNear*zFar/(zFar-zNear),
                           0,         0,    1,                         0;
-
 ```
 # Result
 ![Result](03.png)
