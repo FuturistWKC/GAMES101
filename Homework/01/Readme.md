@@ -1,6 +1,6 @@
 # Formula
-![Formula01](01.png)  
-![Formula02](02.png)
+![Formula01](img/01.png)  
+![Formula02](img/02.png)
 # Code
 **model**
 ```
@@ -22,4 +22,33 @@
                           0,         0,    1,                         0;
 ```
 # Result
-![Result](03.png)
+![Result](img/03.png)
+# 提高
+## Formula
+![Formula01](img/04.png)  
+## Code
+```
+Eigen::Matrix4f get_rotation(Vector3f axis, float angle)
+{
+    axis = axis.normalized();
+    Eigen::Vector4f axis4f = {axis[0], axis[1], axis[2], 0};
+
+    Eigen::Matrix4f rotation;
+    Eigen::Matrix4f I = Eigen::Matrix4f::Identity();
+    Eigen::Matrix4f N = Eigen::Matrix4f::Identity();
+    N << 0,        -axis[2], axis[1],  0,
+         axis[2],  0,        -axis[0], 0,
+         -axis[1], -axis[0],  0,       0,
+         0,        0,         0,       1;
+    
+    float cosValue = cos(angle / 180 * acos(-1));
+    float sinValue = sin(angle / 180 * acos(-1));
+
+    rotation = cosValue * I + (1-cosValue) * (axis4f * axis4f.transpose()) + sinValue * N;
+    rotation(3,3)=1;
+
+    return rotation;
+}
+```
+## Result
+![Result](img/05.gif)
